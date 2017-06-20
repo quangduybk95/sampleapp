@@ -1,0 +1,18 @@
+vi:
+  static_pages:
+    home:
+      hello: "Xin chào"
+      title: "Trang web học Ruby cơ bản"
+      home: "Trang chủ"
+      about: "Thông tin"
+      help: "Trợ giúp"
+      log_in: "Đăng nhập"
+      name: "Ứng dụng đơn giản"
+      sign_up: "Đăng ký"
+      contact: "Liên lạc"
+      news: "Tin tức"
+      contact_content: "Hãy liên lạc ... để được hỗ trợ."
+      intro_app: "Đây là ứng dụng hỗ trợ học Rails."
+      help_content: "Lấy sự giúp đỡ tại ..."
+      welcome: "Xin chào"
+      sign_up_now: "Đăng nhập ngay!"

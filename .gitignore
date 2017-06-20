@@ -26,3 +26,6 @@
 public/*
 test/*
 .framgia-ci-reports/*
+config/secrets.yml
+config/database.yml
+.framgia-ci-result.temp.yml
