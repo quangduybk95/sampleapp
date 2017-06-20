@@ -3,6 +3,7 @@ source "https://rubygems.org"
 gem "bcrypt","3.1.11"
 
 gem "rails", "~> 5.0.1"
+gem "bootstrap-sass", "3.3.7"
 gem "sqlite3"
 gem "puma", "~> 3.0"
 gem "sass-rails", "~> 5.0"
@@ -11,9 +12,7 @@ gem "coffee-rails", "~> 4.2"
 gem "jquery-rails"
 gem "turbolinks", "~> 5"
 gem "jbuilder", "~> 2.5"
-
-gem "bootstrap-sass", "3.3.7"
-
+gem "rails-i18n", "~> 5.0.0"
 group :test do
   gem "rspec-collection_matchers"
   gem "shoulda-matchers", "~> 3.0"
