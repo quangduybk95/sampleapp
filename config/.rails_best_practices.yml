@@ -24,7 +24,10 @@ RemoveEmptyHelpersCheck: { }
 #RemoveTabCheck: { }
 RemoveTrailingWhitespaceCheck: { }
 RemoveUnusedMethodsInControllersCheck: { except_methods: [] }
-RemoveUnusedMethodsInHelpersCheck: { except_methods: [] }
+RemoveUnusedMethodsInHelpersCheck: { except_methods: [
+  SessionsHelper#log_in,
+  SessionsHelper#log_out
+  	] }
 RemoveUnusedMethodsInModelsCheck: {
   except_methods: [],
   ignored_files: [

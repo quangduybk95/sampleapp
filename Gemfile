@@ -13,6 +13,7 @@ gem "jquery-rails"
 gem "turbolinks", "~> 5"
 gem "jbuilder", "~> 2.5"
 gem "rails-i18n", "~> 5.0.0"
+gem "config"
 group :test do
   gem "rspec-collection_matchers"
   gem "shoulda-matchers", "~> 3.0"
