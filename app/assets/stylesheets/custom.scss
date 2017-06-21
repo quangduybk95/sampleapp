@@ -1,7 +1,154 @@
 @import 'bootstrap-sprockets';
 @import 'bootstrap';
 
+$red: #ff0;
+$gray: #bbb;
+$white: #fff;
+$dark: #777;
+$white-1: #efefef;
+$black-1: #222;
+$black-2: #555;
+
+.error-explanation {
+  color: $red;
+
+  ul {
+    color: $red;
+    margin: 0 0 30px;
+  }
+}
+
+.field-with-errors {
+  @extend .has-error;
+
+  .form-control {
+    color: $state-danger-text;
+  }
+}
+
+input,
+textarea,
+select,
+.uneditable-input {
+  border: 1px solid $gray;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  margin-bottom: 15px;
+  width: 100%;
+}
+
+input {
+  height: auto;
+}
+
+
+aside {
+
+  section {
+    margin-top: 20px;
+    padding: 10px 0;
+
+    .user-info {
+      margin-top: 20px;
+    }
+
+    &:first-child {
+      border: 0;
+      padding-top: 0;
+    }
+
+    span {
+      display: block;
+      line-height: 1;
+      margin-bottom: 3px;
+    }
+
+    h1 {
+      font-size: 1.4em;
+      letter-spacing: -1px;
+      margin-bottom: 3px;
+      margin-top: 0;
+      text-align: left;
+    }
+  }
+}
+
+.gravatar {
+  float: left;
+  margin-right: 10px;
+}
+
+.gravatar-edit {
+  margin-top: 15px;
+}
+
+
 $gray-medium-light: #eaeaea;
+
+@mixin box-sizing {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+
+.debug-dump {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  clear: both;
+  float: left;
+  margin-top: 45px;
+  width: 100%;
+}
+
+
+.logo {
+  color: $white;
+  float: left;
+  font-size: 1.7em;
+  font-weight: bold;
+  letter-spacing: -1px;
+  margin-right: 10px;
+  padding-top: 9px;
+  text-transform: uppercase;
+}
+
+.logo:hover {
+  color: $white;
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  line-height: 1;
+}
+
+h1 {
+  font-size: 3em;
+  letter-spacing: -2px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+h2 {
+  color: $dark;
+  font-size: 1.2em;
+  font-weight: normal;
+  letter-spacing: -1px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+p {
+  font-size: 1.1em;
+  line-height: 1.7em;
+}
 
 body {
   padding-top: 60px;
@@ -23,66 +170,22 @@ textarea {
   }
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  line-height: 1;
-}
-
-h1 {
-  font-size: 3em;
-  letter-spacing: -2px;
-  margin-bottom: 30px;
-  text-align: center;
-}
-
-h2 {
-  color: $gray-light;
-  font-size: 1.2em;
-  font-weight: normal;
-  letter-spacing: -1px;
-  margin-bottom: 30px;
-  text-align: center;
-}
-
-p {
-  font-size: 1.1em;
-  line-height: 1.7em;
-}
-
-$white: #fff;
-
-.logo {
-  color: $white;
-  float: left;
-  font-size: 1.7em;
-  font-weight: bold;
-  letter-spacing: -1px;
-  margin-right: 10px;
-  padding-top: 9px;
-  text-transform: uppercase;
-
-  &:hover {
-    color: $white;
-    text-decoration: none;
-  }
-}
 
 footer {
-  border-top: 1px solid $gray-medium-light;
-  color: $gray-light;
-  margin-top: 45px;
-  padding-top: 5px;
+  background-color: $white-1;
+  bottom: 0;
+  left: 0;
+  padding: 1rem;
+  position: absolute;
+  right: 0;
+  text-align: center;
 
   a {
-    color: $gray;
+    color: $black-2;
+  }
 
-    &:hover {
-      color: $gray-darker;
-    }
+  a:hover {
+    color: $black-1;
   }
 
   small {
