@@ -1,5 +1,10 @@
 class UsersController < ApplicationController
-  before_action :find_user, only: [:show, :create]
+  before_action :find_user, except: [:index, :new]
+  before_action :logged_in_user, only: [:index, :edit, :update]
+
+  def index
+    @users = User.all
+  end
 
   def new
     @user = User.new
@@ -16,6 +21,18 @@ class UsersController < ApplicationController
   end
 
   def show
+  end
+
+  def edit
+  end
+
+  def update
+    if @user.update_attributes user_params
+      flash[:success] = t "static_pages.home.profile_updated"
+      redirect_to @user
+    else
+      render :edit
+    end
   end
 
   private
@@ -36,5 +53,17 @@ class UsersController < ApplicationController
       flash[:danger] = t "static_pages.home.invalid_login"
       redirect_to root_url
     end
+  end
+
+  def logged_in_user
+    unless logged_in?
+      store_location
+      flash[:danger] = t "static_pages.home.please_login"
+      redirect_to login_url
+    end
+  end
+
+  def correct_user
+    redirect_to root_url unless current_user? @user
   end
 end
