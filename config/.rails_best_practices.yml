@@ -23,8 +23,11 @@ ProtectMassAssignmentCheck: { }
 RemoveEmptyHelpersCheck: { }
 #RemoveTabCheck: { }
 RemoveTrailingWhitespaceCheck: { }
-RemoveUnusedMethodsInControllersCheck: { except_methods: [] }
-RemoveUnusedMethodsInHelpersCheck: { except_methods: [] }
+RemoveUnusedMethodsInControllersCheck: { except_methods: [
+  UsersController#create
+] }
+RemoveUnusedMethodsInHelpersCheck: { except_methods: [
+  	] }
 RemoveUnusedMethodsInModelsCheck: {
   except_methods: [],
   ignored_files: [
