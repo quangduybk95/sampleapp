@@ -20,27 +20,70 @@
 # available at http://guides.rubyonrails.org/i18n.html.
 
 en:
+  users:
+    new:
+      sign_up: "Sign up"
+    form:
+      save_change: "Save changes"
+      confirm: "Confirmation"
+    edit:
+      edit_user: "Edit User"
+      update_profile: "Update your profile"
+      change_avatar: "Change"
+    index:
+      all_user: "All Users"
+    find_user:
+      invalid_login: "Invalid email/password combination"
+    logged_in_user:
+      please_login: "Please log in"
+    update:
+      profile_updated: "Profile updated"
+    create:
+      welcome: "Welcome to my page"
+
+  shared:
+    error_messages:
+      error: "Error"
+      form_contain: "The form contains"
+  layouts:
+    application:
+      title: "Ruby on Rails Tutorial Sample App"
+    header:
+      user_info: "User Infomation"
+      sign_up: "Sign up"
+      edit_user: "Edit User"
+      all_user: "All Users"
+      home: "Home"
+      help: "Help"
+      name: "Sample app"
+      log_in: "Log in"
+      sign_out: "Sign out"
+    footer:
+      contact: "Contact"
+      about: "About"
+      title: "Ruby on Rails Tutorial Sample App"
+  sessions:
+    new:
+      remember_me: "Remember me on this computer"
+      log_in: "Log in"
+      sign_up_now: "Sign up now!"
+    create:
+      invalid_login: "Invalid email/password combination"
   static_pages:
     home:
-      hello: "Hello world"
-      title: "Ruby on Rails Tutorial Sample App"
-      home: "Home"
-      about: "About"
-      help: "Help"
-      log_in: "Log in"
-      name: "Sample app"
-      sign_up: "Sign up"
-      contact: "Contact"
-      news: "News"
-      contact_content: "Contact the Ruby on Rails Tutorial about the sample app"
-      intro_app: "This is the sample application for the tutorial."
-      help_content: "Get help on the Ruby on Rails Tutorial"
       welcome: "Welcome to my page"
       sign_up_now: "Sign up now!"
-      user_info: "User Infomation"
-      sign_out: "Sign out"
-      form_contain: "The form contains"
-      create_account: "Create account"
-      confirm: "Confirmation"
-      error: "Error"
-      invalid_login: "Invalid email/password combination"
+      title: "Ruby on Rails Tutorial Sample App"
+      home: "Home"
+    about:
+      contact: "Contact"
+      news: "News"
+      about: "About"
+      intro_app: "This is the sample application for the tutorial."
+    help:
+      help_content: "Get help on the Ruby on Rails Tutorial"
+      help: "Help"
+    contact:
+      contact_content: "Contact the Ruby on Rails Tutorial about the sample app"
+      title: "Ruby on Rails Tutorial Sample App"
+      contact: "Contact"

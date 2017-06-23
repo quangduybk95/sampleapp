@@ -1,6 +1,8 @@
 class User < ApplicationRecord
   VALID_EMAIL_REGEX = /\A[\w+\-.]+@[a-z\d\-.]+\.[a-z]+\z/i
 
+  attr_readonly :remember_token
+
   before_save :downcase_email
 
   has_secure_password
@@ -12,7 +14,7 @@ class User < ApplicationRecord
     format: {with: VALID_EMAIL_REGEX},
     uniqueness: {case_sensitive: false}
   validates :password, presence: true,
-    length: {minimum: Settings.password_minimum_length}
+    length: {minimum: Settings.password_minimum_length}, allow_nil: true
 
   class << self
     def digest string
@@ -23,6 +25,28 @@ class User < ApplicationRecord
       end
       BCrypt::Password.create string, cost: cost
     end
+
+    def new_token
+      SecureRandom.urlsafe_base64
+    end
+  end
+
+  def forget
+    update_attributes remember_digest: nil
+  end
+
+  def remember
+    self.remember_token = User.new_token
+    update_attributes remember_digest: User.digest(remember_token)
+  end
+
+  def authenticated?
+    return false unless remember_digest
+    BCrypt::Password.new(remember_digest).is_password? :remember_token
+  end
+
+  def current_user? current_user
+    self == current_user
   end
 
   private
