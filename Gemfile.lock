@@ -152,6 +152,7 @@ GEM
     nio4r (2.1.0)
     nokogiri (1.7.1)
       mini_portile2 (~> 2.1.0)
+    paginate (4.0.1)
     parallel (1.11.2)
     parser (2.4.0.0)
       ast (~> 2.2)
@@ -319,6 +320,7 @@ DEPENDENCIES
   jbuilder (~> 2.5)
   jquery-rails
   listen (~> 3.0.5)
+  paginate
   puma (~> 3.0)
   rails (~> 5.0.1)
   rails-controller-testing
