@@ -26,6 +26,8 @@ en:
     form:
       save_change: "Save changes"
       confirm: "Confirmation"
+      activate: "Activation"
+      reset_pass: "Reset Password"
     edit:
       edit_user: "Edit User"
       update_profile: "Update your profile"
@@ -40,7 +42,7 @@ en:
       profile_updated: "Profile updated"
     create:
       welcome: "Welcome to my page"
-
+      please_activate: "Please check your email to activate your account."
   shared:
     error_messages:
       error: "Error"
@@ -69,6 +71,7 @@ en:
       sign_up_now: "Sign up now!"
     create:
       invalid_login: "Invalid email/password combination"
+      not_activate: "Account not activated. Check your email for the activation link."
   static_pages:
     home:
       welcome: "Welcome to my page"
@@ -87,3 +90,24 @@ en:
       contact_content: "Contact the Ruby on Rails Tutorial about the sample app"
       title: "Ruby on Rails Tutorial Sample App"
       contact: "Contact"
+  password_resets:
+    create:
+      flash:
+        danger: "Can't find this email"
+        success: "Send mail ok"
+        info: "Send request reset passwork done"
+    edit:
+      reset_pass: "Reset password"
+      update_pass: "Update password"
+      confirm: "Confirmation"
+    new:
+      foget_pass: "Forgot password"
+      submit: "Submit"
+    check_expiration:
+      danger: "Error"
+    update:
+      empty?: "Don't be blank"
+  account_activations:
+    flash:
+      danger: "Error"
+      success: "Success"

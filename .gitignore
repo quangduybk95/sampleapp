@@ -36,3 +36,4 @@ config/environments/*.local.yml
 config/settings/development.yml
 config/settings/production.yml
 config/settings/test.yml
+config/environment_variables.yml

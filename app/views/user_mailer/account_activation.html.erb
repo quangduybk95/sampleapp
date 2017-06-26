@@ -1,0 +1,6 @@
+<p><%= @user.name %>,</p>
+
+<p><%= t "static_pages.home.welcome" %></p>
+
+<%= link_to t("users.form.activate"), edit_account_activation_url(@user.activation_token,
+  email: @user.email) %>
