@@ -1,7 +1,6 @@
 source "https://rubygems.org"
 
 gem "bcrypt","3.1.11"
-
 gem "rails", "~> 5.0.1"
 gem "bootstrap-sass", "3.3.7"
 gem "sqlite3"
@@ -15,7 +14,10 @@ gem "jbuilder", "~> 2.5"
 gem "rails-i18n", "~> 5.0.0"
 gem "faker", "1.7.3"
 gem "config"
-gem "paginate"
+gem "bootstrap-will_paginate", "~> 0.0.10"
+gem "carrierwave", "~> 0.11.2"
+gem "i18n-js"
+
 group :test do
   gem "rspec-collection_matchers"
   gem "shoulda-matchers", "~> 3.0"

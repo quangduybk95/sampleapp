@@ -20,6 +20,7 @@
 # available at http://guides.rubyonrails.org/i18n.html.
 
 en:
+
   users:
     new:
       sign_up: "Sign up"
@@ -111,3 +112,32 @@ en:
     flash:
       danger: "Error"
       success: "Success"
+  microposts:
+    create:
+      flash:
+        success: "Create successfully."
+        danger: "Create failed"
+    destroy:
+      flash:
+        success: "Deleted successfully."
+    posted: "Posted"
+    delete: "Delete"
+    confirm_delete: "Are you sure?"
+    max_size_img: "Maximum file size is 5MB. Please choose a smaller file."
+    flash:
+      correct_user:
+        danger: "You cannot do this action!"
+    form:
+      submit: "Post"
+  datetime:
+    distance_in_words:
+      about_x_hours:
+        one: "an hour ago"
+        other: "%{count} hours ago"
+      x_minutes:
+        one: "an minute ago"
+        other: "%{count} minutes ago"
+      less_than_x_minutes:
+        one: "less than a minute ago"
+        other: "less than %{count} minutes ago"
+      x_days: "%{count} days ago"
